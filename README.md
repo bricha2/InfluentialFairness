@@ -10,8 +10,13 @@ singleStep_mitigationFxn.py and iterative_mitigationFxn.py: scripts to conduct m
 singleStep and iterative functions must be run with config file that includes:
 
 [SETTINGS]
+
 data_name = DATA_NAME
+
 outcome_column_name = COLUMN_NAME
+
 group_column_name = COLUMN_NAME
+
 default_minority_group = ATTRIBUTE_VALUE
+
 default_majority_group = ATTRIBUTE_VALUE
