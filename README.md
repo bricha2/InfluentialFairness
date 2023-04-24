@@ -5,22 +5,18 @@ Folder containing pipeline scripts for bias mitigation via Influential Fairness.
 
 The code is set up for COMPAS, LAW, or ADULT dataset, but can easily generalize to other tabular, text, and image datasets.
 
-influence_functions.py: contains all the functions needed for producing and computing scores
+pytorch_functions.py: contain functions related to creating dataset objects and models via PyTorch
 
-InfluentialFairness.py: script that computes influence scores on example datasets. First script to be run on formatted dataset. From here, any of the next set of scripts can be run.
+BB_functions.py: contain functions to create Black-Box Influence Scores
 
-singleStep_mitigationFxn.py and iterative_mitigationFxn.py: scripts to conduct mitigation using proposed strategies
+WB_functions.py: contain functions to create Ground truth Influence Scores
 
-InfluentialFairness, singleStep and iterative functions must be run with config file that includes:
+ruleClassification_functions.py: contain functions to create rule-based explanations of given scores
 
-[SETTINGS]
+mitigationMethods.py: contain main proposed mitigation methods
 
-data_name = DATA_NAME
+RBO_functions.py: Contain RBO metric
 
-outcome_column_name = COLUMN_NAME
+support_functions.py: Contain additional support functions.
 
-group_column_name = COLUMN_NAME
 
-default_minority_group = ATTRIBUTE_VALUE
-
-default_majority_group = ATTRIBUTE_VALUE
